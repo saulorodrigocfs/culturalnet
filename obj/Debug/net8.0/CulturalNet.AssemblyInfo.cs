@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CulturalNet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+142fe85eaa6cdad38490a4006fd38f729b54dba6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0bd388621833d462c79afe61126f185fa107c72a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CulturalNet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CulturalNet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

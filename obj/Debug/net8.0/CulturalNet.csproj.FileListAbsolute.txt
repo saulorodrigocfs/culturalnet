@@ -28,3 +28,4 @@ C:\Users\alexs\Desktop\Saulo\CulturalNet\obj\Debug\net8.0\refint\CulturalNet.dll
 C:\Users\alexs\Desktop\Saulo\CulturalNet\obj\Debug\net8.0\CulturalNet.pdb
 C:\Users\alexs\Desktop\Saulo\CulturalNet\obj\Debug\net8.0\CulturalNet.genruntimeconfig.cache
 C:\Users\alexs\Desktop\Saulo\CulturalNet\obj\Debug\net8.0\ref\CulturalNet.dll
+C:\Users\alexs\Desktop\Saulo\CulturalNet\obj\Debug\net8.0\CulturalNet.sourcelink.json
