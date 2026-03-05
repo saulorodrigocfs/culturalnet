@@ -1,6 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+@model List<ModelPost.Post>
+
 <h1>Feed da Comunidade</h1>
 
-<p>Aqui aparecerão os posts.</p>
-</html>
+<a href="/Post/Create">Criar novo post</a>
+
+<hr>
+
+@foreach (var post in Model)
+{
+    <div style="border:1px solid gray; padding:10px; margin-bottom:10px;">
+
+        <h2>@post.Title</h2>
+
+        <p><strong>Categoria:</strong> @post.Category</p>
+
+        <p>@post.Content</p>
+
+        <small>@post.CreatedAt</small>
+
+    </div>
+}

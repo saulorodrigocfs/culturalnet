@@ -1,26 +1,24 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+@model ModelPost.Post
 
 <h1>Criar Post</h1>
 
-<form>
+<form asp-action="Create" method="post">
 
-    <label>Título</label>
-    <input type="text" />
+    <div>
+        <label>Título</label>
+        <input asp-for="Title" />
+    </div>
 
-    <br>
+    <div>
+        <label>Categoria</label>
+        <input asp-for="Category" />
+    </div>
 
-    <label>Categoria</label>
-    <input type="text" />
-
-    <br>
-
-    <label>Canteúdo</label>
-    <textarea></textarea>
-
-    <br>
+    <div>
+        <label>Conteúdo</label>
+        <textarea asp-for="Content"></textarea>
+    </div>
 
     <button type="submit">Publicar</button>
 
 </form>
-</html>
