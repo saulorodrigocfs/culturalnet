@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "X7r1f+MTahH1L5reUznIE28+25gV/6OOiCIJd8++z2I=",
+  "Hash": "wVz2yVFwRJT1pbKkOvs3YyKPd8/VVzgDQyqmi/fIwc0=",
   "Source": "CulturalNet",
   "BasePath": "_content/CulturalNet",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\alexs\\Desktop\\Saulo\\CulturalNet\\wwwroot\\images\\posts\\62e2d90d-8ba6-4499-a018-415802151ef6.jpeg",
+      "SourceId": "CulturalNet",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alexs\\Desktop\\Saulo\\CulturalNet\\wwwroot\\",
+      "BasePath": "_content/CulturalNet",
+      "RelativePath": "images/posts/62e2d90d-8ba6-4499-a018-415802151ef6.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\posts\\62e2d90d-8ba6-4499-a018-415802151ef6.jpeg"
     },
     {
       "Identity": "C:\\Users\\alexs\\Desktop\\Saulo\\CulturalNet\\wwwroot\\js\\site.js",
