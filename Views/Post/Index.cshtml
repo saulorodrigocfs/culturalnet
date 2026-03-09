@@ -2,21 +2,32 @@
 
 <h1>Feed da Comunidade</h1>
 
-<a href="/Post/Create">Criar novo post</a>
+<a class="btn btn-primary mb-3" href="/Post/Create">Criar novo post</a>
 
 <hr>
 
 @foreach (var post in Model)
 {
-    <div style="border:1px solid gray; padding:10px; margin-bottom:10px;">
+    <div class="card mb-3">
+        <div class="card-body">
 
-        <h2>@post.Title</h2>
+            <h3>@post.Title</h3>
 
-        <p><strong>Categoria:</strong> @post.Category</p>
+            <p>
+                <strong>Categoria:</strong> @post.Category
+            </p>
 
-        <p>@post.Content</p>
+            <p>@post.Content</p>
 
-        <small>@post.CreatedAt</small>
+            @if (post.ImagePath != null)
+            {
+                <img src="@post.ImagePath" class="img-fluid rounded mb-2" style="max-width:400px;" />
+            }
 
+            <p>
+                <small class="text-muted">@post.CreatedAt</small>
+            </p>
+
+        </div>
     </div>
 }

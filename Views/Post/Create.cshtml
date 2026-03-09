@@ -2,7 +2,7 @@
 
 <h1>Criar Post</h1>
 
-<form asp-action="Create" method="post">
+<form asp-action="Create" method="post" enctype="multipart/form-data">
 
     <div>
         <label>Título</label>
@@ -17,6 +17,11 @@
     <div>
         <label>Conteúdo</label>
         <textarea asp-for="Content"></textarea>
+    </div>
+
+    <div>
+        <label>Imagem</label>
+        <input type="file" name="imageFile" />
     </div>
 
     <button type="submit">Publicar</button>

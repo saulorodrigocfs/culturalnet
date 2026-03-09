@@ -29,14 +29,27 @@ namespace CulturalNet.Controllers
 
         // RECEBER FORMULÁRIO
         [HttpPost]
-        public IActionResult Create(Post post)
+        public async Task<IActionResult> Create(Post post, IFormFile imageFile)
         {
-            //Console.WriteLine("POST RECEBIDO");
-
             if (ModelState.IsValid)
             {
+                if (imageFile != null && imageFile.Length > 0)
+                {
+                    var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imageFile.FileName);
+
+                    var path = Path.Combine(Directory.GetCurrentDirectory(),
+                    "wwwroot/images/posts", fileName);
+
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        await imageFile.CopyToAsync(stream);
+                    }
+
+                    post.ImagePath = "/images/posts/" + fileName;
+                }
+
                 _context.Posts.Add(post);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
 
                 return RedirectToAction("Index");
             }
