@@ -37,29 +37,6 @@ Feed de publicações com imagens e categorias, semelhante a uma timeline simple
 
 ---
 
-## 🗂 Estrutura do Projeto
-
-CulturalNet
-│
-├── Controllers
-│ └── PostController.cs
-│
-├── Models
-│ └── Post.cs
-│
-├── Views
-│ └── Post
-│ ├── Index.cshtml
-│ └── Create.cshtml
-│
-├── Data
-│ └── AppDbContext.cs
-│
-└── wwwroot
-└── images/posts
-
----
-
 ## ⚙️ Como Rodar o Projeto
 
 1️⃣ Clone o repositório
