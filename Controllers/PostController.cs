@@ -16,7 +16,7 @@ namespace CulturalNet.Controllers
         // FEED PRINCIPAL
         public IActionResult Index()
         {
-            var posts = _context.Posts.ToList();
+            var posts = _context.Posts.OrderByDescending(p => p.CreatedAt).ToList();
             return View(posts);
         }
 
